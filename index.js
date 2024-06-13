@@ -16,7 +16,7 @@ app.listen(port, () => {
 function keepAlive() {
   setInterval(() => {
     // Ping Server B
-    axios.get('http://localhost:3001')
+    axios.get('https://serverbeta.onrender.com/')
       .then(response => {
         console.log('Ping to Server B successful');
       })
